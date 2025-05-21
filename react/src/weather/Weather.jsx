@@ -12,7 +12,7 @@ const Weather = () => {
     e.preventDefault();
 
     const api = await fetch(
-      `http://api.weatherstack.com/current?access_key=7bb03730627b5fdcc9407a92e6df887b&query=${loc}`
+      `https://api.weatherstack.com/current?access_key=7bb03730627b5fdcc9407a92e6df887b&query=${loc}`
     );
     const data = await api.json();
 
